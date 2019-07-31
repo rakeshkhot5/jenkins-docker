@@ -10,7 +10,7 @@ chmod 666 /var/run/docker.sock
 ```
 
 ```
-docker run -itd -p 8080:8080 -p 5000:5000 -v /var/run/docker.sock:/var/run/docker.sock rakeshkhot5/jenkins
+docker run -itd -p 8080:8080 -p 5000:5000 -v /your/home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock rakeshkhot5/jenkins
 ```
 
 ## Step-2: Copy the Jenkins password and paste it over Jenkins UI.
